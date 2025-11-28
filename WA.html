@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="WA.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="title">Weather App</h1>
+
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Search city..." />
+            <button id="search-btn">Go</button>
+        </div>
+
+        <p class="hint">Example: Delhi, New York, London</p>
+
+        <!-- Error message -->
+        <div id="error" class="error hidden"></div>
+
+        <!-- Weather Info -->
+        <div id="weather-info" class="weather hidden">
+
+            <div class="city">
+                <h2 id="city-name"></h2>
+                <p id="description" class="description"></p>
+            </div>
+
+            <div class="temperature-section">
+                <span id="temperature" class="temp-value"></span>
+                <span class="unit">°C</span>
+            </div>
+
+            <div class="details">
+                <div class="detail">
+                    <p>Humidity</p>
+                    <span id="humidity"></span>
+                </div>
+                <div class="detail">
+                    <p>Wind</p>
+                    <span id="wind"></span>
+                </div>
+                <div class="detail">
+                    <p>Feels Like</p>
+                    <span id="feels-like"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="footer">Made by You • Powered by OpenWeather</p>
+    </div>
+
+    <script src="WA.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* Black background */
+body {
+    margin: 0;
+    background: #000;
+    font-family: Arial, sans-serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title */
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Search bar layout */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#city-input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #111;
+    color: white;
+    font-size: 1rem;
+}
+
+#city-input:focus {
+    outline: none;
+    border: 1px solid #888;
+}
+
+#search-btn {
+    padding: 10px 16px;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#search-btn:hover {
+    background: #e4e4e4;
+}
+
+/* Hint text */
+.hint {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+/* Error message */
+.error {
+    background: #300;
+    color: #faa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+/* Weather info */
+.weather {
+    margin-top: 20px;
+}
+
+/* City */
+.city h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-top: 4px;
+}
+
+/* Temperature */
+.temperature-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.temp-value {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.unit {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* Details */
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.detail {
+    background: #111;
+    padding: 12px;
+    border-radius: 10px;
+    width: 30%;
+    border: 1px solid #222;
+}
+
+.detail p {
+    font-size: 0.75rem;
+    color: #bbb;
+}
+
+.detail span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Hide / show */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    margin-top: 25px;
+    font-size: 0.75rem;
+    color: #777;
+}
